@@ -1,59 +1,66 @@
-# Films
+# Films Management Application 🎬
+
+A web application for managing a film database, developed as a university project using Angular and TypeScript.
+
+The application provides an interface for browsing, adding, and editing films, including information about directors, characters, and film rankings.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Browse and view film information
+- Add and edit films
+- Add, edit, and remove directors and characters
+- Manage film details, including titles, release years, and IMDb IDs
+- Edit AFI 1998 and AFI 2007 film rankings
+- Form validation and protection against losing unsaved changes
+- Communication with a backend REST API
+
+## Technologies Used
+
+- **Angular 19**
+- **TypeScript**
+- **Angular Material**
+- **Angular Forms**
+- **Angular Router**
+- **RxJS**
+- **REST API**
+
+## Development Server
+
+The application requires the provided Java backend server (`films-server.jar`) to be running.
+
+To start a local Angular development server, run:
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open your browser at `http://localhost:4200/`.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
+The application will automatically reload whenever you modify any of the source files.
 
 ## Building
 
-To build the project run:
+To build the project, run:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This will compile the project and store the build artifacts in the `dist/` directory.
 
-## Running unit tests
+## Running Unit Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, run:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## About the Project
 
-For end-to-end (e2e) testing, run:
+This project was developed as part of a university course focused on modern web application development.
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+It demonstrates working with Angular components, forms, REST API integration, routing, and managing complex data relationships between films, directors, and characters.
